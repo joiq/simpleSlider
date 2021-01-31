@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.slider {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider__wrapper {
+  overflow: hidden;
+}
+
+.slider__inner {
+  display: flex;
+  width: 100%;
+  transition: 0.5s linear all;
+}
+
+.slider__item {
+  width: auto;
+}
+
+.slider__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(111, 0, 238);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: .2s all linear;
+}
+
+.slider__btn:hover {
+  background-color: rgb(45, 2, 94);
+}
+
+.slider__btn.next {
+  right: -100px;
+}
+
+.slider__btn.prev {
+  left: -100px;
+}
